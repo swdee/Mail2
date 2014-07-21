@@ -67,7 +67,7 @@
  * @license BSD
  * @package Mail
  */
-require_once 'Mail2/Exception.php';
+//require_once 'Mail2/Exception.php';
 
 class Mail2_RFC822 {
 
