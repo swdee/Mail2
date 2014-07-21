@@ -175,8 +175,8 @@ class Mail2
 
         foreach ($headers as $key => $value) {
             if (strcasecmp($key, 'From') === 0) {
-                include_once 'Mail/RFC822.php';
-                $parser = new Mail_RFC822();
+                include_once 'Mail2/RFC822.php';
+                $parser = new Mail2_RFC822();
                 $addresses = $parser->parseAddressList($value, 'localhost', false);
                 if (is_a($addresses, 'PEAR_Error')) {
                     return $addresses;
